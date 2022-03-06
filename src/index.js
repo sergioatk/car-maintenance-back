@@ -1,7 +1,7 @@
 const configApp = require("./config");
 configApp();
 const app = require("express")();
-const PORT = process.env.PORT | 8080;
+const PORT = process.env.PORT || 8080;
 const carRoutes = require("./routes/cars");
 const cors = require("cors");
 app.use(cors());
