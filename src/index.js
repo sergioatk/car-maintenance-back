@@ -3,11 +3,11 @@ configApp();
 const app = require("express")();
 const PORT = process.env.PORT | 8080;
 const carRoutes = require("./routes/cars");
-
+const cors = require("cors");
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send('Hello world!');
+  res.send("Hello world!");
 });
 app.use("/cars", carRoutes);
 
