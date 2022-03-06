@@ -7,7 +7,7 @@ const carRoutes = require("./routes/cars");
 app.use(cors());
 
 app.get("/", (req, res) => {
-  console.log("en ghome");
+  res.send('Hello world!');
 });
 app.use("/cars", carRoutes);
 
